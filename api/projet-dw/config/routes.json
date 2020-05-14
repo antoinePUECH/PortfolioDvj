@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/projet-dws",
+      "handler": "projet-dw.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projet-dws/count",
+      "handler": "projet-dw.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/projet-dws/:id",
+      "handler": "projet-dw.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/projet-dws",
+      "handler": "projet-dw.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/projet-dws/:id",
+      "handler": "projet-dw.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/projet-dws/:id",
+      "handler": "projet-dw.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

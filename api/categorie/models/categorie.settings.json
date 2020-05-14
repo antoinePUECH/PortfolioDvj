@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Catégorie"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Categorie": {
+      "type": "string",
+      "unique": false,
+      "required": true
+    },
+    "projets": {
+      "collection": "projet-dw",
+      "via": "category"
+    }
+  }
+}

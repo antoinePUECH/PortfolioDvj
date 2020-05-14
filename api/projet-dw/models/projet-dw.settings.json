@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projet_dws",
+  "info": {
+    "name": "Projet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Projet": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "Date": {
+      "type": "date"
+    },
+    "category": {
+      "via": "projets",
+      "model": "categorie"
+    }
+  }
+}
